@@ -471,6 +471,41 @@ justify-content: space-between;
   margin: 0 auto;
 }
 
+
+#quality .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#quality .section__title,
+#values .section__title {
+  line-height: 1.25;
+}
+#quality .btn {
+  margin-top: 32px;
+}
+.quality__description {
+  max-width: 576px;
+  margin-right: 64px;
+}
+.quality__description,
+.quality__img--wrapper {
+  width: 50%;
+}
+.quality__img--wrapper {
+  border-radius: 4px;
+  border: 1px solid rgb(229, 231, 235);
+  position: relative;
+  margin: 0 56px;
+  z-index: 2;
+  display: flex;
+}
+
+.quality__img {
+  z-index: 1;
+}
+
+
 #steps .row {
   display: flex;
   justify-content: space-between;
