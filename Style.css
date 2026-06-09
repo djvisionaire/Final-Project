@@ -1108,7 +1108,6 @@ footer {
   font-weight: 700;
   color: #f7fafc;
   line-height: 1.5;
-  padding: 40px ;
 }
 .footer__column--link {
   color: #f7fafc;
@@ -1118,11 +1117,10 @@ footer {
   font-weight: 500;
   position: relative;
   cursor: pointer;
-  padding: 0 20px;
  
 }
 
-  footer__column--link:after {
+.footer__column--link:after {
   content: "";
   position: absolute;
   left: 0;
