@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    color #243e63;
+    color: #243e63;
 }
 
 html {
@@ -56,7 +56,7 @@ h1 {
     letter-spacing: 1.6px;
     font-weight: 700;
     text-transform: uppercase;
-   text-align: center;
+    text-align: center;
 
 }
 
@@ -101,12 +101,11 @@ button {
 
 /* nav bar */
 
-.row    {
+.row  {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+   
 
 }
 
@@ -482,15 +481,19 @@ header {
 #quality .row {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+   flex-wrap: nowrap;
+  max-width: 1280px;
 }
 
 #quality .section__title,
 #values .section__title {
   line-height: 1.25;
+  text-align: left;
 }
 
-#quality .section__tag {
+#quality .section__tag,
+#values .section__tag {
   text-align: left;
 }
 
@@ -506,7 +509,6 @@ header {
 .quality__description,
 .quality__img--wrapper {
   width: 50%;
-  position: relative;
 }
 
 .quality__img--wrapper {
@@ -518,7 +520,19 @@ header {
   display: flex;
 }
 
-
+.quality__grid {
+  transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  fill: rgb(100, 21, 255);
+  --tw-text-opacity: 1;
+  color: rgba(100, 21, 255, var(--tw-text-opacity));
+  z-index: 0;
+  display: block;
+}
 
 .quality__img {
   z-index: 1;
@@ -623,6 +637,7 @@ header {
 .value__title {
   display: flex;
   align-items: center;
+   text-align: left;
 }
 .value__img {
   width: 20px;
